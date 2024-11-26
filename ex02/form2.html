@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <script src="popup.js" defer></script>
+    <style>
+        /* Estilos para el título h1 */
+        h1 {
+            font-size: 1.5em; /* Tamaño grande para el título */
+            font-weight: bold; /* Poner el texto en negrita */
+            color: #333; /* Color gris oscuro */
+            text-align: left; /* Alineado en el centro */
+            margin-top: 50px; /* Margen superior para separarlo del borde */
+            margin-bottom: 10px; /* Margen inferior para espacio entre el título y el formulario */
+            font-family: 'Arial', sans-serif; /* Fuente moderna */
+        }
+        /* Estilos para los botones */
+        button {
+            background-color: #03758c; /* Fondo */
+            color: white; /* Texto en blanco */
+            border: none; /* Eliminar el borde por defecto */
+            padding: 5px 10px; /* Espaciado interno del botón */
+            font-size: 1em; /* Tamaño de fuente del botón */
+            border-radius: 5px; /* Bordes redondeados */
+            cursor: pointer; /* Cursor de mano */
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave para color y tamaño */
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact form</h1>
+    <!-- Agregamos onsubmit="return false;" para evitar el envío del formulario -->
+    <form id="contactForm" onsubmit="return false;">
+        <div>
+            <label for="firstname">Firstname:</label>
+            <input type="text" id="firstname" name="firstname" required>
+        </div>
+        <div> 
+            <label for="lastname">Lastname:</label>
+            <input type="text" id="name" name="lastname" required>
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+        </div> 
+        <div>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="student">Student at 42?</label>
+            <input type="checkbox" id="student" name="student">
+        </div>
+        <div>
+            <input type="radio" id="gender_male" name="gender" value="Male" required> Male
+            <input type="radio" id="gender_female" name="gender" value="Female" required> Female
+            <input type="radio" id="gender_other" name="gender" value="Other" required> Other
+        </div>
+        <!-- El botón de submit llama a la función displayFormContents() -->
+        <button type="button" onclick="displayFormContents()">Run that sexy Javascript!</button>
+    </form>
+</body>
+</html>

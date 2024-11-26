@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <script src="popup.js" defer></script>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #333;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* Estilos para el formulario */
+        form {
+            max-width: 90%; /* El formulario puede ocupar hasta el 90% del ancho */
+            width: 500px;   /* Un tamaño fijo para pantallas grandes */
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilo de los divs que contienen los campos */
+        div {
+            margin-bottom: 10px;
+        }
+
+        /* Estilo de las etiquetas */
+        label {
+            display: block;
+            margin-bottom: 4px;
+            font-weight: bold;
+        }
+
+        /* Estilo de los campos de texto */
+        input[type="text"],
+        input[type="number"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="checkbox"],
+        input[type="radio"] {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        /* Estilo del botón */
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #70b073;
+        }
+
+        /* Estilo de los inputs de tipo radio */
+        div input[type="radio"] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Contact form</h1>
+    <!-- Agregamos onsubmit="return false;" para evitar el envío del formulario -->
+    <form id="contactForm" onsubmit="return false;">
+        <div>
+            <label for="firstname">Firstname:</label>
+            <input type="text" id="firstname" name="firstname" required>
+        </div>
+        <div> 
+            <label for="lastname">Lastname:</label>
+            <input type="text" id="name" name="lastname" required>
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+        </div> 
+        <div>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="student">Student at 42?</label>
+            <input type="checkbox" id="student" name="student">
+        </div>
+        <div>
+            <label>Gender:</label>
+            <input type="radio" id="gender_male" name="gender" value="Male" required> Male
+            <input type="radio" id="gender_female" name="gender" value="Female" required> Female
+            <input type="radio" id="gender_other" name="gender" value="Other" required> Other
+        </div>
+        <!-- El botón de submit llama a la función displayFormContents() -->
+        <button type="button" onclick="displayFormContents()">Run that sexy Javascript!</button>
+    </form>
+</body>
+</html>

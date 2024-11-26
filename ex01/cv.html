@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Currículum</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 2px solid black;
+      padding: 10px;
+      text-align: left;
+    }
+
+    /* Estilo especial para los títulos (th) */
+    th {
+      background-color: #4caf89; /* Fondo verde */
+      color: white;              /* Texto en blanco */
+      font-weight: bold;         /* Negrita */
+      font-size: 1.2em;          /* Tamaño de fuente mayor */
+      text-align: center;        /* Centrar el texto */
+    }
+
+    /* Estilo especial para la última celda */
+    td:last-child {
+      border-color: #424242;
+    }
+    /* Centrar el título <h1> */
+    h1 {
+        text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Currículum Vitae</h1>
+  <table>
+    <tr>
+      <th colspan="2">Información Personal</th>
+    </tr>
+    <tr>
+      <td>Nombre</td>
+      <td>Sonia</td>
+    </tr>
+    <tr>
+      <td>Apellido</td>
+      <td>Varela</td>
+    </tr>
+    <tr>
+      <th colspan="2">Habilidades</th>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <ul>
+          <li>Trabajo en equipo</li>
+          <li>Resolución de problemas</li>
+          <li>Programación en Python</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th colspan="2">Trayectoria Profesional</th>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <ol>
+          <li>2023 - Desarrollador en XYZ</li>
+          <li>2021 - Asistente de TI</li>
+          <li>2019 - Practicante en ABC</li>
+        </ol>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

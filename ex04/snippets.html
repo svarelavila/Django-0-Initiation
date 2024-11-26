@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snippets Integration</title>
+</head>
+<body>
+    <!-- Cargar primero la función puffin() -->
+    <script src="file4.js"></script> <!-- Define puffin() -->
+    <!-- Luego cargar unicorn(), que depende de puffin() -->
+    <script src="file1.js"></script> <!-- Define unicorn(), llama a puffin() -->
+    <!-- Después cargar whale(), que depende de unicorn() -->
+    <script src="file3.js"></script> <!-- Define whale(), llama a unicorn() -->
+    <!-- Finalmente cargar cat(), que depende de whale() -->
+    <script src="file2.js"></script> <!-- Define cat(), llama a whale() -->
+</body>
+</html>

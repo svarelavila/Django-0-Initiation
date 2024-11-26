@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Currículum</title>
+  <style>
+    /* Estilo para la tabla */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 2px solid black; /* Bordes visibles */
+      padding: 5px;
+      text-align: left;
+    }
+
+    /* Estilo especial para los títulos (th) */
+    th {
+      background-color: #4caf89; /* Fondo verde */
+      color: white;              /* Texto en blanco */
+      font-weight: bold;         /* Negrita */
+      font-size: 1.2em;          /* Tamaño de fuente mayor */
+      text-align: center;        /* Centrar el texto */
+    }
+
+    /* Estilo especial para la última celda */
+    td:last-child {
+      border-color: #424242;
+    }
+
+    /* Centrar el título <h1> */
+    h1 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Título principal -->
+  <h1>Currículum Vitae</h1>
+
+  <!-- Tabla que contiene la información del currículum -->
+  <table>
+    <!-- Información Personal -->
+    <tr>
+      <th colspan="2">Información Personal</th>
+    </tr>
+    <tr>
+      <td style="width: 30%; font-weight: bold;">Nombre:</td>
+      <td>Sonia</td>
+    </tr>
+    <tr>
+      <td style="width: 30%; font-weight: bold;">Apellido:</td>
+      <td>Varela</td>
+    </tr>
+
+    <!-- Habilidades -->
+    <tr>
+      <th colspan="2">Habilidades</th>
+    </tr>
+    <tr>
+      <td style="width: 30%; font-weight: bold;">Habilidades:</td>
+      <td>
+        <ul>
+          <li>Trabajo en equipo</li>
+          <li>Resolución de problemas</li>
+          <li>Programación en Python</li>
+        </ul>
+      </td>
+    </tr>
+
+    <!-- Trayectoria Profesional -->
+    <tr>
+      <th colspan="2">Trayectoria Profesional</th>
+    </tr>
+    <tr>
+      <td style="width: 30%; font-weight: bold;">Experiencia:</td>
+      <td>
+        <ol>
+          <li>2023 - Desarrollador en XYZ</li>
+          <li>2021 - Asistente de TI</li>
+          <li>2019 - Practicante en ABC</li>
+        </ol>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
