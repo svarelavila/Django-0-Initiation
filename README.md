@@ -1,4 +1,4 @@
-# 📌 Python-Django: Iniciación
+# 📌 Training Python-Django - 0 Initiation
 
 Este repositorio contiene los ejercicios de entrenamiento en **Python-Django**, con enfoque en el desarrollo web. Durante este proceso, se cubrirán los siguientes temas:
 
