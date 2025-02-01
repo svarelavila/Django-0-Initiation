@@ -17,3 +17,9 @@ Este repositorio contiene los ejercicios de entrenamiento en **Python-Django**, 
 | **ex03** | Replicar fielmente una página web proporcionada, separando correctamente contenido (HTML) y estilos (CSS). |
 | **ex04** | Crear una página HTML que cargue y ejecute correctamente **4 archivos JavaScript**. |
 | **ex05** | Corregir un archivo HTML defectuoso para cumplir con los estándares W3C sin errores ni advertencias. |
+
+### 🏆 Evaluación
+
+<p align="left">
+  <img src="https://github.com/svarelavila/svarelavila/blob/main/imagenes/ok_100.png" alt="logo" width="125"/>
+</p>
